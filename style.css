@@ -1,0 +1,121 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:blueviolet;
+    user-select: none;
+}
+
+.calculator {
+    border-radius: 70px;
+    min-width:460px;
+    min-height:755px;
+    max-width:460px;
+    max-height:500px;
+    background-color: rgb(16, 5, 5);
+    color:greenyellow ; 
+    position: relative; 
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+#topscreen {
+    display: flex; 
+    text-align: right;
+    background-color: rgb(13, 6, 2);
+    color: rgb(231, 228, 228);
+    min-width: 80%;
+    max-width: 80%;
+    min-height: 10.8rem;
+    max-height: 10.8rem; 
+    margin: 55px 0 0 0; 
+    flex-wrap: wrap;
+    justify-content: flex-end;   
+}
+
+.inputs {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 5rem;
+    min-width: 85%;
+    max-width: 85%;
+    min-height: 3rem;
+    max-height: 3rem; 
+}
+
+.result {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 6rem;
+    min-width: 90%;
+    max-width: 90%;
+    min-height: 6rem;
+    max-height: 6rem;  
+}
+
+.buttons {
+    display: grid;  
+    grid-template-columns: repeat(4, 1fr)/*1fr 1fr 1fr 1fr*/;  
+    width: 90%;    
+    gap: 10px;  
+   
+}
+
+.button {  
+    height: 90px;
+    transition: filter 0.3s;
+    border-radius: 55px;
+    font-size: 3rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+   
+}
+
+.button:hover {
+    opacity: 0.6;
+    color:purple;
+} 
+
+.button:active {
+    box-shadow: 0 5px 15px rgba(127, 198, 209, 0.4);
+}
+
+.light {
+    background-color: rgb(17, 122, 29);
+    color: aquamarine;
+} 
+
+.darkgray {
+    background-color: rgb(28, 27, 27);
+} 
+
+.pink {
+    background-color: rgb(255, 0, 238);
+}
+
+.pink:active {
+    box-shadow: 0 5px 15px rgba(98, 47, 187, 0.4);
+}
+
+.long { 
+    border-radius: 35px;
+    grid-column: 1/3;
+}
+
+@media screen and (max-width: 460px){
+    body {   
+        justify-content: center;
+        height: auto;
+        width: auto;
+    }  
+}
