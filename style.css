@@ -39,7 +39,7 @@ body{
     justify-content: flex-end;   
 }
 
-.inputs {
+.input {
     display: flex;
     justify-content: flex-end;
     align-items: center;
