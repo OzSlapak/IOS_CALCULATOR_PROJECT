@@ -39,7 +39,7 @@ body{
     justify-content: flex-end;   
 }
 
-.input {
+.primary{
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -50,7 +50,7 @@ body{
     max-height: 3rem; 
 }
 
-.result {
+.secondary {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
